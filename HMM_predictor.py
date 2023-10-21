@@ -20,7 +20,7 @@ except FileNotFoundError:
     print("Archivo CSV no encontrado. Por favor, verifica la ruta del archivo.")
     sys.exit()
 
-def predictor(used_data, test_size, n_components, n_latency_days, day_index ):
+def predictor(used_data, test_size, n_components ):
     # No mezcles los datos ya que es una serie temporal
     _train_data, test_data = train_test_split(used_data, test_size=test_size, shuffle=False)
 
@@ -58,9 +58,9 @@ def predictor(used_data, test_size, n_components, n_latency_days, day_index ):
     hmm_1.fit(observations)
 
     # Parámetros para los intervalos
-    n_intervals_frac_change = 10  # Ajusta según tus necesidades
-    n_intervals_frac_high = 10  # Ajusta según tus necesidades
-    n_intervals_frac_low = 10  # Ajusta según tus necesidades
+    n_intervals_frac_change = 15  # Ajusta según tus necesidades
+    n_intervals_frac_high = 15  # Ajusta según tus necesidades
+    n_intervals_frac_low = 15  # Ajusta según tus necesidades
 
     # Crea arrays de NumPy con números espaciados uniformemente para cada rango
     frac_change_range = np.linspace(-0.1, 0.1, n_intervals_frac_change)
@@ -73,8 +73,8 @@ def predictor(used_data, test_size, n_components, n_latency_days, day_index ):
     )
 
     # Parámetros
-    #day_index = 20  # Índice del día actual, ajusta según tus necesidades
-    #n_latency_days = 2  # Número de días de latencia, ajusta según tus necesidades
+    day_index = 20  # Índice del día actual, ajusta según tus necesidades
+    n_latency_days = 2  # Número de días de latencia, ajusta según tus necesidades
 
     # Usa los datos anteriores de n_latency_days para las predicciones
     previous_data_start_index = max(0, day_index - n_latency_days)
@@ -116,7 +116,4 @@ def predictor(used_data, test_size, n_components, n_latency_days, day_index ):
     return predicted_close_price
 
 n_components = 3
-n_latency_days = 5
-day_index = 20
-
-print(predictor(used_data, test_size, n_components, n_latency_days, day_index))
+predictor(used_data, test_size, n_components)
