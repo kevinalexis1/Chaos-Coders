@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://finance.yahoo.com/quote/KC%3DF/history?period1=972086400&period2=1697846400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true
+HostUrl=https://query1.finance.yahoo.com/v7/finance/download/KC=F?period1=1666334053&period2=1697870053&interval=1d&events=history&includeAdjustedClose=true
