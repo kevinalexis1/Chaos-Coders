@@ -107,7 +107,7 @@ def predict_next_day():
     predicted_close_price = last_open_price * (1 + predicted_frac_change)
 
     # Calcular el cambio fraccional para el siguiente día
-    predicted_frac_change = (next_day_predicted_price - test_data['Close'].iloc[-1]) / test_data['Close'].iloc[-1]
+    predicted_frac_change = (predicted_close_price - test_data['Close'].iloc[-1]) / test_data['Close'].iloc[-1]
 
     # Definir la señal
     if predicted_frac_change > buy_threshold:
