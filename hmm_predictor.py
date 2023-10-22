@@ -82,7 +82,7 @@ for possible_outcome in possible_outcomes:
     outcome_score.append(hmm_1.score(total_data))
 
 # Precios de cierre históricos
-historical_close_prices = used_data['Close']
+historical_close_prices = weekly_data['Close']
 
 # Calcular los cambios fraccionales en los precios de cierre
 frac_changes = [(historical_close_prices[i] - historical_close_prices[i-1]) / historical_close_prices[i-1] for i in range(1, len(historical_close_prices))]
