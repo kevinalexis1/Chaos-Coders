@@ -119,7 +119,7 @@ def predict_next_day():
 
     return predicted_close_price, trade_signal
 
-app = Flask(_name_)
+app = Flask(__name__)
 CORS(app)
 
 @app.route('/predict', methods=['GET'])
@@ -133,7 +133,7 @@ def predict():
         'actual_close_prices': actual_close_prices
     })
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     app.run(port=5000)
 
 
