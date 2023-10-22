@@ -20,5 +20,9 @@ Este cuaderno utiliza un Modelo Oculto de Markov para predecir precios de cierre
 Este cuaderno analiza las correlaciones entre los precios del café, petróleo WTI y el índice S&P 500. Utiliza pandas y Seaborn para manipular y visualizar datos, con el fin de entender la interconexión entre estos mercados.
 
 ### 'hmm_predictor.py'
-Este módulo Python encapsula las funcionalidades del cuaderno hmm_predictor.ipynb. Facilita la predicción de precios del café y la generación de señales de trading para su uso en otros proyectos.
+Este módulo Python encapsula las funcionalidades del cuaderno hmm_predictor.ipynb. Facilita la predicción de precios del café y la generación de señales de trading para su uso en otros proyectos, sobretodo para la pagina web.
+
+### 'coffee_web.html'
+Este archivo HTML es la interfaz web de nuestro proyecto de "Predicción Financiera en el Mercado del Café". Para visualizar la página y acceder a sus funcionalidades, por favor descargue el archivo y ábralo con un navegador web.
+
 
