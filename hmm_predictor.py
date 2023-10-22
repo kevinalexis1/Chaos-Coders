@@ -119,3 +119,21 @@ def predict_next_day():
 
     return predicted_close_price, trade_signal
 
+app = Flask(_name_)
+CORS(app)
+
+@app.route('/predict', methods=['GET'])
+def predict():
+    
+    valor_predecido, etiqueta_compra = predict_next_day()
+
+    return jsonify({
+        'predicted_value': valor_predecido,
+        'action_label': etiqueta_compra,
+        'actual_close_prices': actual_close_prices
+    })
+
+if _name_ == '_main_':
+    app.run(port=5000)
+
+
