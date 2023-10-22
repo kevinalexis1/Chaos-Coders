@@ -6,6 +6,6 @@ Para este reto se busco diseñar modelos que permitan predecir el comportamiento
 Para este reto se usaron datos del mercado de futuros de Café (KC=F), que pueden ser encontrados en https://finance.yahoo.com/quote/KC%3DF/history?period1=946857600&period2=1697760000&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true, estos datos fueron obtenidos con una frecuencia semanal.
 El resultado de estas señales es simulado con los datos del mercado, de manera que nos permiten medir su rendimiento posible. Luego estos resultados son comparados con una técnica básica de negociación de productos financieros, que consiste en la compra y retención de estos, comunmente conocida como holding. 
 
-Ademas se presenta la posibilidad de mejorar los modelos, incluyendo información de diferentes mercados relacionados directamente al ir y venir de la política mundial. 
+Ademas se presenta la posibilidad de mejorar los modelos, incluyendo información de diferentes mercados relacionados directamente al ir y venir de la política mundial.
 
 
