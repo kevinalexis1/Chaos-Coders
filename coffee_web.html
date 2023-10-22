@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predicción Financiera en el Mercado del Café</title>
+    <style>
+        /* Cambia el color de fondo a azul claro y el texto a blanco */
+        body {
+            background-color: lightblue;
+            color: white;
+        }
+        /* Estilo para el contenedor del logo y el texto */
+        #header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #logo-container {
+            display: flex;
+            align-items: center;
+        }
+        /* Estilo para el texto al lado del logo */
+        #logo-text {
+            margin-left: 20px;  /* Espacio a la izquierda del texto */
+        }
+        /* Estilo para el menú de navegación */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+	.team-container {
+	    display: flex;
+	    justify-content: space-around;
+	}
+
+	.team-member {
+	    text-align: center;
+	}
+
+	
+
+	h2 {
+      	  text-align: center;
+   	}
+  	.team-container {
+        	display: flex;
+        	justify-content: center;
+        }
+        .team-member {
+	        margin: 15px;
+        	text-align: center;
+	}	
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado y Menú de Navegación -->
+    <header id="header-container">
+        <div id="logo-container">
+            <img src="https://raw.githubusercontent.com/kevinalexis1/Chaos-Coders/media/logo_coffee.png" alt="Logo de la Empresa" width="50" height="55">
+            <div id="logo-text">Chaotic Coders: Análisis de Mercado</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#intro">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#model">Modelo</a></li>
+                <li><a href="#results">Resultados</a></li>
+                <li><a href="#team">Equipo</a></li>
+                <li><a href="#contact">Trabajo a futuro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Sección de Introducción -->
+    <section id="intro">
+    <h1 style="text-align: center;">Prediccion Financiera del Café</h1>
+    <p style="text-align: center; color: black;">
+        Chaotic Coders tiene como objetivo crear modelos basados en machine learning y series de tiempo en base a datos históricos para predecir el valor futuro del café en el mercado.
+    </p>
+</section>
+
+    <!-- Acerca de la Predicción Financiera y el Mercado del Café -->
+    <section id="about">
+        <h2 style="text-align: center;">Sobre el Mercado del Café</h2>
+        <p style="text-align: center; color: black;">
+            El tamaño del mercado global del café se evalúa en USD 126.17. La bolsa de valores es compleja (no lineal) y volátil, lo que dificulta la manera de ganar en tales mercados.
+            Chaotic Coders se enfoca en usar el modelo de Markov oculto para predecir valores de compra y venta en el mercado del café.
+        </p>
+        <div style="text-align: center;">
+            <img src="https://raw.githubusercontent.com/kevinalexis1/Chaos-Coders/media/cafe_analiticos.jpeg" alt="Descripción de la imagen" style="width: 300px;">
+        </div>
+    </section>
+
+    <!-- Cómo Funciona el Modelo -->
+    <section id="model">
+    <h2 style="text-align: center; color: white;">Cómo Funciona Nuestro Modelo</h2>
+    <p style="text-align: center; color: black;">
+        El Modelo Oculto de Markov (HMM) es un modelo estadístico que se utiliza para describir sistemas complejos que evolucionan con el tiempo. Estos sistemas están compuestos por una serie de estados discretos que cambian a lo largo del tiempo, pero no podemos observar directamente qué estado se encuentra en un momento dado. Podemos observar solo una serie de símbolos o eventos que se producen en función del estado en el que se encuentra el sistema.
+    </p>
+    <p style="text-align: center; color: black;">
+        El HMM es un modelo generativo que usa una cadena de Markov para modelar la evolución de los estados ocultos y una distribución de probabilidad condicional para modelar la relación entre los estados ocultos y las observaciones. Este modelo asume que las observaciones están relacionadas solo con el estado actual del sistema y no dependen de estados anteriores o futuros.
+    </p>
+    <div style="text-align: center;">
+        <img src="https://raw.githubusercontent.com/kevinalexis1/Chaos-Coders/media/markov.png" alt="Descripción de la imagen" style="width: 800px;">
+    </div>
+    <p style="text-align: center; color: black;">
+        En el contexto del análisis financiero del café, un HMM es útil para modelar y predecir los precios del café en función de una serie de factores ocultos. Podemos tener tres estados “Compra”, “Venta”, "Retencion" para los precios del café. No podemos observar directamente estos estados, pero podemos observar los precios del café. Entonces, usamos un HMM para estimar la probabilidad de transición entre estos estados y predecir los precios futuros del café.
+    </p>
+
+	
+</section>
+
+    <!-- Resultados del Modelo -->
+    <section id="results">
+        <h2 style="text-align: center; color: white;">Resultados del Modelo</h2>
+        <button id="getPrediction" style="display: block; margin: auto;">Obtener Predicción</button>
+        <canvas id="myChart"></canvas>
+    </section>
+
+
+    <!-- Equipo -->
+    <section id="team">
+    <h2 style="text-align:center;">Nuestro Equipo</h2>
+    <div class="team-container">
+        <div class="team-member">
+            <img src="https://raw.githubusercontent.com/kevinalexis1/Chaos-Coders/media/mateo.jpg" alt="Miembro 1" width="175" height="210">
+            <p>Mateo Carpio <br> <a href="https://www.linkedin.com/in/mateo-carpio-rivas/">LinkedIn</a></p>
+        </div>
+        <div class="team-member">
+            <img src="https://raw.githubusercontent.com/kevinalexis1/Chaos-Coders/media/Arya.jpg" alt="Miembro 2" width="175" height="210">
+            <p>Arianna Paredes <br> <a href="https://www.linkedin.com/in/arianna-jparedes/">LinkedIn</a></p>
+        </div>
+        <div class="team-member">
+            <img src="https://raw.githubusercontent.com/kevinalexis1/Chaos-Coders/media/kevin.jpg" alt="Miembro 3" width="180" height="210">
+            <p>Kevin Robalino <br> <a href="https://www.linkedin.com/in/kevin-robalino/">LinkedIn</a></p>
+        </div>
+        <div class="team-member">
+            <img src="https://raw.githubusercontent.com/kevinalexis1/Chaos-Coders/media/jordan.jpg" alt="Miembro 4" width="183" height="210">
+            <p>Jordan Zambrano <br> <a href="https://www.linkedin.com/in/jordan-zambrano-5137a778/">LinkedIn</a></p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>Políticas de Privacidad | Términos y Condiciones</p>
+        <!-- Redes sociales, etc. -->
+    </footer>
+
+    <!-- Aquí irán los scripts de JavaScript -->
+
+
+    
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Tu script personalizado -->
+
+
+    <script>
+    $(document).ready(function(){
+        $("#getPrediction").click(function(){
+            $.get("http://127.0.0.1:5000/predict", function(data, status){
+                // Generar etiquetas para el eje X basadas en el número de puntos de datos
+                var numDataPoints = data.actual_close_prices.length;
+                var daysLabels = Array.from({length: numDataPoints}, (_, i) => 'semana ' + (i + 1)).concat(['Predicción']);
+
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: daysLabels,
+                        datasets: [
+                            {
+                                label: 'Precios de Cierre Actuales',
+                                data: data.actual_close_prices,
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                borderWidth: 1
+                            },
+                            {
+                                label: 'Precio de Cierre Predicho',
+                                data: Array(numDataPoints).fill(null).concat([data.predicted_value]),
+                                borderColor: 'red',
+                                borderWidth: 1,
+                                pointRadius: 6,
+                                fill: false
+                            }
+                        ]
+                    }
+                });
+
+                // Añadir la etiqueta "compra" debajo de la gráfica
+                $("#myChart").after("<p style='color: red;'>Acción recomendada: " + data.action_label + "</p>");
+		
+
+            });
+        });
+    });
+    </script>
+
+</body>
+</html>
