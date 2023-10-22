@@ -8,4 +8,5 @@ El resultado de estas señales es simulado con los datos del mercado, de manera 
 
 Ademas se presenta la posibilidad de mejorar los modelos, incluyendo información de diferentes mercados relacionados directamente al ir y venir de la política mundial.
 
+Se presentan varios notebooks en los que se analizan diferentes aspectos de los datos. En el notebook book_tat_markov.ipynb se presenta una reproducción de la metodología propuesta por TC Nokeri usando HMM. The notebook hmm_preductir 
 
