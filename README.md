@@ -8,5 +8,17 @@ El resultado de estas señales es simulado con los datos del mercado, de manera 
 
 Ademas se presenta la posibilidad de mejorar los modelos, incluyendo información de diferentes mercados relacionados directamente al ir y venir de la política mundial.
 
-Se presentan varios notebooks en los que se analizan diferentes aspectos de los datos. En el notebook book_tat_markov.ipynb se presenta una reproducción de la metodología propuesta por TC Nokeri usando HMM. The notebook hmm_preductir 
+# Archivos
+
+'book_test_markov.ipynb'
+Este cuaderno Jupyter sirve como un ejemplo práctico para explorar las capacidades del paquete hmmlearn en el análisis de datos de precios y volúmenes de café. Utiliza un modelo de Markov oculto para visualizar y entender las tendencias en los precios y volúmenes de café.
+
+'hmm_predictor.ipynb'
+Este cuaderno Jupyter utiliza un Modelo Oculto de Markov (HMM) para predecir los precios de cierre del café. El modelo se entrena con datos históricos que incluyen precios de apertura, cierre, máximos y mínimos. Además, el cuaderno genera señales de compra, venta o retención basadas en el análisis de cambios fraccionales en los precios. El objetivo es proporcionar una herramienta de pronóstico de precios y una estrategia de trading para el mercado del café.
+
+'correlations_cafe.ipynb'
+Este cuaderno Jupyter se centra en analizar las correlaciones entre los precios del café, el petróleo WTI y el índice S&P 500. Utiliza pandas para la manipulación de datos y Seaborn para la visualización. El cuaderno carga datos históricos de estos tres activos, los combina en un solo DataFrame y luego calcula y visualiza la matriz de correlación. El objetivo es entender cómo estos mercados están interconectados y cómo los cambios en uno podrían afectar a los otros.
+
+'hmm_predictor.py'
+Este módulo Python encapsula las funcionalidades clave del cuaderno Jupyter hmm_predictor.ipynb para facilitar su importación y uso en otros proyectos, como para la página web. El módulo utiliza el modelo de mezcla de Markov oculto (HMM) para predecir los precios de cierre del café. Incluye funciones para la preparación de datos, entrenamiento del modelo HMM, y generación de señales de trading ('Compra', 'Venta', 'Retención') basadas en los precios previstos. El objetivo es proporcionar una forma eficiente y automatizada de obtener predicciones y señales de trading para el mercado del café.
 
