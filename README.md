@@ -10,15 +10,15 @@ Ademas se presenta la posibilidad de mejorar los modelos, incluyendo informació
 
 # Archivos
 
-## 'book_test_markov.ipynb'
+### 'book_test_markov.ipynb'
 Este cuaderno Jupyter sirve como un ejemplo práctico para explorar las capacidades del paquete hmmlearn en el análisis de datos de precios y volúmenes de café.
 
-## 'hmm_predictor.ipynb'
+### 'hmm_predictor.ipynb'
 Este cuaderno utiliza un Modelo Oculto de Markov para predecir precios de cierre del café y generar señales de trading. Se entrena con datos históricos de precios de apertura, cierre, máximos y mínimos.
 
-## 'correlations_cafe.ipynb'
+### 'correlations_cafe.ipynb'
 Este cuaderno analiza las correlaciones entre los precios del café, petróleo WTI y el índice S&P 500. Utiliza pandas y Seaborn para manipular y visualizar datos, con el fin de entender la interconexión entre estos mercados.
 
-## 'hmm_predictor.py'
+### 'hmm_predictor.py'
 Este módulo Python encapsula las funcionalidades del cuaderno hmm_predictor.ipynb. Facilita la predicción de precios del café y la generación de señales de trading para su uso en otros proyectos.
 
