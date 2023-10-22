@@ -129,8 +129,7 @@ def predict():
 
     return jsonify({
         'predicted_value': valor_predecido,
-        'action_label': etiqueta_compra,
-        'actual_close_prices': actual_close_prices
+        'action_label': etiqueta_compra
     })
 
 if __name__ == '__main__':
